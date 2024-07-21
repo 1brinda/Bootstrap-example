@@ -1,0 +1,262 @@
+/* Base Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.header, .hero, .navbar, .search, .destinations, .about-us, .footer {
+    padding: 20px;
+    text-align: center;
+}
+
+.header, .navbar {
+    
+    color: #fff;
+}
+
+.navbar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.navbar ul li {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.navbar ul li a:hover {
+    color: #80cbc4;
+}
+
+.hero {
+    background: url('new.jpg') no-repeat center center/cover;
+    color: #fff;
+    padding: 60px 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.search {
+    background: #f9f9f9;
+    padding: 40px 20px;
+    
+}
+
+.search input[type="text"],
+.search input[type="number"],
+.search input[type="date"] {
+    padding: 10px;
+    margin: 10px 0;
+    width: calc(25% - 20px);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.search button {
+    padding: 10px 20px;
+    background-color: #004d40;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.search button:hover {
+    background-color: #00796b;
+}
+
+.destinations {
+    background: #f0f0f0;
+    padding: 60px 20px;
+}
+
+.destinations h2 {
+    margin-bottom: 40px;
+    font-size: 2.5em;
+    color: #004d40;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    max-width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+.card h3 {
+    font-size: 1.4em;
+    color: #004d40;
+    margin-top: 15px;
+}
+
+.card p {
+    color: #666;
+    margin: 15px 0;
+}
+
+.card a {
+    color: #004d40;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.card a:hover {
+    color: #00796b;
+}
+
+.about-us {
+    background: #fff;
+    padding: 60px 20px;
+}
+
+.about-us h2 {
+    margin-bottom: 40px;
+    font-size: 2.5em;
+    color: #004d40;
+}
+
+.about-us p {
+    color: #666;
+    margin: 15px 0;
+    line-height: 1.6;
+}
+
+.team {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.team-member {
+    background: #f4f4f4;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.team-member h3 {
+    font-size: 1.4em;
+    color: #004d40;
+    margin-top: 15px;
+}
+
+.team-member p {
+    color: #666;
+    margin: 15px 0;
+    line-height: 1.6;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+    background-color: #0f7968;
+    color: #fff;
+}
+
+.footer-content .footer-section {
+    flex: 1 1 300px;
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #035149;
+    border-radius: 10px;
+}
+
+.footer-content .footer-section h3 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    color: #80cbc4;
+}
+
+.footer-content .footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-content .footer-section ul li {
+    margin: 10px 0;
+}
+
+.footer-content .footer-section ul li a {
+    color: #80cbc4;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-content .footer-section ul li a:hover {
+    color: #fff;
+}
+
+.footer-content .footer-section p {
+    line-height: 1.6;
+    margin: 10px 0;
+    color: #b2dfdb;
+}
+
+.footer-content .socials {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.footer-content .socials a {
+    margin: 0 10px;
+    color: #80cbc4;
+    font-size: 1.2em;
+    transition: color 0.3s;
+}
+
+.footer-content .socials a:hover {
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+}
